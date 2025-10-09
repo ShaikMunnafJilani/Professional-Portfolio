@@ -1,0 +1,84 @@
+@import '../../../styles.scss';
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: $accent-color;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    color: lighten($text-color, 10%);
+}
+
+.contact-card {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: $secondary-bg;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.email-link, .phone-link {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    
+    i {
+        margin-right: 15px;
+        color: $accent-color;
+    }
+    a {
+        color: $text-color;
+        transition: color 0.3s;
+        &:hover {
+            color: $accent-color;
+        }
+    }
+}
+
+.social-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-btn {
+    padding: 10px 25px;
+    border-radius: 4px;
+    font-weight: 700;
+    transition: background-color 0.3s, color 0.3s;
+    
+    i {
+        margin-right: 8px;
+    }
+}
+
+.linkedin {
+    background-color: #0077B5;
+    color: white;
+    &:hover {
+        background-color: darken(#0077B5, 10%);
+    }
+}
+
+.github {
+    background-color: #333;
+    color: white;
+    &:hover {
+        background-color: $accent-color;
+        color: $primary-bg;
+    }
+}
+
+.location-detail {
+    text-align: center;
+    margin-top: 30px;
+    color: lighten($text-color, 20%);
+    font-size: 0.9rem;
+}

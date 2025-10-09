@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Variables */
+$primary-bg: #121212;
+$secondary-bg: #1E1E1E;
+$text-color: #E0E0E0;
+$accent-color: #00BCD4;
+$heading-font: 'Roboto', sans-serif;
+$body-font: 'Open Sans', sans-serif;
+
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $primary-bg;
+    color: $text-color;
+    font-family: $body-font;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+    font-family: $heading-font;
+    font-weight: 700;
+    color: $text-color;
+}
+
+a {
+    color: $accent-color;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: lighten($accent-color, 15%);
+    }
+}
+
+/* Utility Class for Sections */
+.section-padding {
+    padding: 80px 5%;
+    min-height: 80vh; /* Ensures sections take up most of the viewport */
+    border-bottom: 1px solid $secondary-bg;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

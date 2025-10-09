@@ -1,0 +1,55 @@
+@import '../../../styles.scss';
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: $accent-color;
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.skill-category {
+    background-color: $secondary-bg;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-top: 3px solid transparent;
+    transition: border-top 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+        border-top-color: $accent-color;
+        transform: translateY(-3px);
+    }
+
+    h3 {
+        color: $text-color;
+        font-size: 1.4rem;
+        margin-top: 0;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba($accent-color, 0.3);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        li {
+            background-color: darken($secondary-bg, 3%);
+            margin-bottom: 10px;
+            padding: 10px 15px;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            color: lighten($text-color, 5%);
+            border-left: 3px solid $accent-color;
+        }
+    }
+}
+
+.soft-skills ul li {
+    // border-left: 3px solid $success-good; /* Use a different accent for soft skills */
+    border-left: 3px solid $accent-color;
+}

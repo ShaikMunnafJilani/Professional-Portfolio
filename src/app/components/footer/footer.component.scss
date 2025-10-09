@@ -1,0 +1,25 @@
+@import '../../../styles.scss';
+
+footer {
+    background-color: $secondary-bg;
+    color: lighten($text-color, 30%); /* Slightly muted text color */
+    padding: 30px 5%;
+    border-top: 1px solid rgba($accent-color, 0.1);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.signature {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.accent-text {
+    color: $accent-color;
+    font-weight: 500;
+}
